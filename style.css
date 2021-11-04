@@ -1,0 +1,43 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background-color: #FFD580;
+}
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    box-shadow: 0 0 10px 2px;
+}
+
+.grid-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: lightblue;
+    border-radius: 5px;
+    padding: auto;
+    color: rgb(5, 0, 0);
+    outline: none;
+}
+
+.btn:hover {
+    border-color: black;
+}
