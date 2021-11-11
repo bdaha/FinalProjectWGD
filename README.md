@@ -7,4 +7,3 @@ HOW IT WORKS
 The player will go through different text options to reach the goal at the end. 
 The goal of the player is to play a simple canvas game at the end.
 
-![game flowchart](web game final flowchart.JPG)
