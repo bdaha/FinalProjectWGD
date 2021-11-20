@@ -17,9 +17,14 @@ function showStoryText(textNodeIndex){
     while(checkButtons.firstChild) {
         checkButtons.removeChild(checkButtons.firstChild)
     }
+    
     textNode.options.forEach(option => {
-        if(optionSelect(option)) {
-
+        if(optionShown(option)) {
+            const button = document.createElement("button")
+            button.innerText = option.text
+            button.classList.add("btn")
+            button.addEventListener('click', () => optionSelect(option))
+            checkButtons.appendChild(button)
         }
     })
 }
@@ -47,12 +52,17 @@ const textNodes = [
             nextText: 2
         },{
             //option 2
-            text: "Leave the lights off and stay inside the room."
+            text: "Leave the lights off and stay inside the room.",
+            nextText: 2
         }
         ]
     }, {
         //nextText
-        id: 2
+        id: 2,
+        text: "",
+        options: [{
+            text: "",
+        }]
     }
 ]
 

@@ -11,7 +11,10 @@ body {
     align-items: center;
     padding: 0;
     margin: 0;
-    background-color: #FFD580;
+    background-image: url("pageonepic.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .container {
